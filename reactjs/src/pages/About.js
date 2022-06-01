@@ -1,26 +1,19 @@
-import { Outlet,Link } from "react-router-dom";
-import { useState } from "react";
+import Main from "../components/Main";
 import Katie from "../images/katie-zaferes.png"
 import Wedding from "../images/wedding-photography.png"
-
+import Boy from "../images/boy.png"
+import Man from "../images/man.png"
 const About = ()=>{
     return (
+      <div>
+        <h1 className="about_top">MEET OUR TEAM</h1>
         <div>
-        <div className="Con_about">
-            <img class="image-box"src={Katie} alt=""/>
-            <div class="details">
-              <h4>James Bernal</h4>
-              <small>Devoloper | Youtuber</small>
-            </div>
+            <Main name="James Bernal" job="Doctor | Influencer" imagePath={Wedding}/>
+            <Main name="Jordan Bernal" job="Devoloper | Youtuber" imagePath={Katie}/>
+            <Main name="Jack Brown" job="Engineer | Programmer" imagePath={Boy}/>
+            <Main name="David Bob" job="Professor | Youtuber" imagePath={Man}/>
         </div>
-        <div className="Con_about">
-            <img class="image-box"src={Wedding} alt=""/>
-            <div class="details">
-              <h4>Janny Bernal</h4>
-              <small>Doctor | Influencer</small>
-            </div>
-          </div>
-          </div>
+      </div>
     )
 }
 export default About;

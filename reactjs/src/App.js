@@ -14,9 +14,9 @@ function App() {
   console.log("ENVIRONMENT VARIABLES =",process.env)
   return (
     <UserProvider>
-      <Header/>
       <main className='main'>
         <div className='container'>
+      
           <Outlet/>
         </div>
       </main>

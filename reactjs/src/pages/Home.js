@@ -5,7 +5,6 @@ import Card from "../components/Card"
 import Katie from "../images/katie-zaferes.png"
 import Wedding from "../images/wedding-photography.png"
 import Bike from "../images/mountain-bike.png"
-//import Button from './components/Button';
 
 const Home = ()=>{
     const cards = data.map(item => {
@@ -19,10 +18,8 @@ const Home = ()=>{
     console.log(cards)
     return (
         <>
-        
             <Service />
             <section className="cards-list">
-                {/* {cards} */}
                 <Card coverImg = {Katie}
                     description = "I will share with you what I call Positively Impactful Moments of Disappointment. Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals."
                     id = {1}
