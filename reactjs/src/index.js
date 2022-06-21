@@ -9,6 +9,7 @@ import Login from './pages/Login'
 import axios from 'axios'
 import Header from './components/Header';
 import About from './pages/About'
+import Partners from './pages/Partners'
 
 axios.defaults.baseURL=process.env.REACT_APP_BASE_API_URL
 
@@ -22,7 +23,7 @@ ReactDOM.render(
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
           <Route path='/about' element={<About/>}/>
-
+          <Route path='/partners' element={<Partners/>}/>
         </Route>
         </Routes>
       </BrowserRouter>,

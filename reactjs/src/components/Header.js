@@ -26,6 +26,7 @@ const Header=()=>{
           <ul class="menu">
             <li><Link class="navbar-brand" to="/home">Home</Link></li>
             <li><Link class="navbar-brand" to="/about">CoreTeam</Link></li>
+            <li><Link class="navbar-brand" to="/partners">Partners</Link></li>
             <li><Link class="navbar-brand" to="/login">Login</Link></li>
             <li><Link class="navbar-brand" to="/register">Register</Link></li>
           </ul>
